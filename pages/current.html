@@ -3,32 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
+    <title>Clemens F. Bigge</title>
+    <link rel="stylesheet" href="stylesheets/index.css" />
 </head>
 
 <body>
-
     <header>
-        <a href="index.html">Clemens F. Bigge</a>
-        <button popovertarget="Navigation">Navigation</button>
+        <nav class="main-nav"> 
+            <ul class="top-nav">
+                <li><a href="../index.html">Clemens F. Bigge</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="filmmusic.html">Composing for Film and Theatre</a></li>
+                <li class="dropdown">
+                    <a href="current.html">Projects</a>
+                    <ul class="dropdown-content">
+                        <li class="dropdown-sub">
+                            <a href="current.html">current</a>
+                            <ul>
+                                <li><a href="felian.html">Felian</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="past.html">past</a></li>
+                    </ul>
+                </li>
+                <li><a href="pics.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button id="nav-open" aria-label="Open menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="4" width="24" height="2" rx="1" ry="1" fill="white"/>
+                            <rect y="11" width="24" height="2" rx="1" ry="1" fill="white"/>
+                            <rect y="18" width="24" height="2" rx="1" ry="1" fill="white"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
 
-        <nav popover id="Navigation">
-            <div>
-                <a href="felian.html">Felian</a>
-                <a href="bio.html">Bio</a>
-                <a href="pics.html">Pics</a>
-                <a href="contact.html">Contact</a>
-            </div>
+
+        <nav class="side-nav">
+            <ul>
+                <li>
+                    <button id="nav-close" aria-label="Close menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="none" stroke="#e3e3e3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="filmmusic.html">Composing for Film and Theatre</a></li>
+                <li class="dropdown">
+                    <a href="current.html">Projects</a>
+                    <ul class="dropdown-content">
+                        <li class="dropdown-sub">
+                            <a href="current.html">current</a>
+                            <ul>
+                                <li><a href="felian.html">Felian</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="past.html">past</a></li>
+                    </ul>
+                </li>
+                <li><a href="pics.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
-
+    
     <main>
-        <h1 style="margin: 10vh;">Bio</h1>
+        <div class="main-content">
+            <h1>My current Projects</h1>
+            <p style="margin-top: 5rem;">Currently my project is mainly this Website. <br><br>But I also work on a Duo with Kezia Editha Christy. More Coming up soon!</p>
+        </div>
     </main>
 
     <footer>
-        <p>Mark VIII</p> <p> ---------- </p><p>=_I°x</p>
+        <div class="footer-info">
+            <p>Mark X</p>
+            <p>-----</p>
+            <p>=_|°x</p>
+        </div>
+
+        <div class="copyright">
+            <p>
+                © 2025 Clemens F. Bigge. All rights reserved.
+                Code, music, and text by Clemens F. Bigge. Photographs © their respective authors.
+            </p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
