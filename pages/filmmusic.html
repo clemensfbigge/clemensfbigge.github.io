@@ -78,20 +78,16 @@
             <iframe width="50%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2105320014&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/clemeb" title="Clemens F. Bigge" target="_blank" style="color: #cccccc; text-decoration: none;">Clemens F. Bigge</a> · <a href="https://soundcloud.com/clemeb/frauen-vor-flusslandschaft" title="Frauen-vor-Flusslandschaft" target="_blank" style="color: #cccccc; text-decoration: none;">Frauen-vor-Flusslandschaft</a></div>
     </main>
 
-    <footer>
-        <div class="footer-info">
-            <span>Mark X</span>
-            <span><a href="impressum.html">Impressum</a></span>
-            <span>=_|°x</span>
-        </div>
 
-        <div class="copyright">
-            <span>
-                © 2025 Clemens F. Bigge. All rights reserved.
-                Code, music, and text by Clemens F. Bigge. Photographs © their respective authors.
-            </span>
-        </div>
-    </footer>
+<div id="footer">
+<script>
+	fetch('footer.html')
+	.then(response => response.text())
+	.then(data => {
+		document.getElementById('footer').innerHTML = data;
+	});
+</script>	
+</div>
 
     <script src="script.js"></script>
 </body>
